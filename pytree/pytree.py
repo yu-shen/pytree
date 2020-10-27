@@ -260,10 +260,3 @@ class AVLTree(object):
         if node is None or node.left is None:
             return node
         return self._get_smallest_node(node.left)
-
-
-if __name__ == '__main__':
-    tree = AVLTree()
-    tree.insert_array(["abc", "ab", "a"])
-    print(tree.root)
-
